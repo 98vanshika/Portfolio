@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanshika Saini</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+            <nav>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/intro.html">My Intro</a></li>
+                <!-- <li><a href="/services.html">Services</a></li> -->
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/contact.html">Contact Me</a></li>
+            </nav>
+        </div>
+        <div class="main">
+            
+            <div class="hamburger">
+                <img class="ham" src="ham.png" alt="" width="73">
+                <img class="cross" src="cross.png" alt="" width="73">
+            </div>
+            <div class="resume">
+                <h1>Resume</h1>
+            </div>
+            <div id="viewer" style="width: 2280px; height: 2000px;"></div>
+            <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
+            <script>
+              const config = { 
+                documentId: '062fc1fa-5620-4ec8-ac60-0f9ec623099c',
+                // aappBarColored: true,
+                // themeColor: '#ffffff',
+                darkMode: true, 
+              };
+              CloudPDF(config, document.getElementById('viewer')).then((instance) => {
+                
+              });
+            </script>
+            </div>
+    </div>   
+    <script src="script.js"></script>     
+</body>
+</html>
